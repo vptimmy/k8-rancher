@@ -1,0 +1,12 @@
+rancher:
+  hostname: rancher.home.lab
+
+  ingress:
+    enabled: true
+    extraAnnotations:
+      cert-manager.io/cluster-issuer: homelab-ca-issuer
+      kubernetes.io/ingress.class: nginx
+
+    tls:
+      source: secret
+      secretName: tls-rancher.home.lab
