@@ -1,8 +1,5 @@
 rancher:
   hostname: rancher.home.lab
-  # rancherImage: registry.home.lab/docker-proxy/rancher/rancher
-  # imagePullSecrets:
-  #   - registr
 
   ingress:
     extraAnnotations:
