@@ -1,0 +1,12 @@
+rancher:
+  hostname: rancher.home.lab
+  # rancherImage: registry.home.lab/docker-proxy/rancher/rancher
+  # imagePullSecrets:
+  #   - registr
+
+  ingress:
+    extraAnnotations:
+      cert-manager.io/cluster-issuer: homelab-ca-issuer
+    tls:
+      source: secret
+      secretName: tls-rancher.home.lab
